@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+    <script src="html.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Files -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
+
+    <!-- CHART JS FILES-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="d-flex center box-shadow margin-b24 sticky-t0 white z-index-999">
+        <header class="d-flex header">
+            <div class="d-flex">
+                <img src="./img/pokedex.png" class="padding-l13 pokedex">
+                <h1 class="padding-l13">Pokedex</h1>
+            </div>
+            <div class="padding-r13">
+                <input id="search" type="text" class="width-120" placeholder="Catch 'Em All"
+                    oninput="searchPokemon(); searchInputEmpty();">
+            </div>
+        </header>
+    </div>
+    <div class="d-flex center">
+        <main class="d-flex main" id="cards">
+        </main>
+        <div class="card-opened-background z-index-999">
+            <div id="card-opened" class="card-opened fire">
+                <div class="d-flex heaven-opened">
+                    <div class="button-spacer">
+                        
+                    </div>
+                    <div class="name-wrap white">
+                        <h3 class="#" id="pokemonName">Name</h3>
+                    </div>
+                    <div id="types" class="types-opened d-flex margin-t8 ">
+                        <img class="types-img" src="./img/dragon.png">
+                        <img class="types-img" src="./img/dragon.png">
+                    </div>
+                    <div class="pokemon-img-container-opened">
+                        <img class="pokemon-img-opened" src="./img/testPokemonImg.svg">
+                    </div>
+                </div>
+                <div id="base1" class="base-opened white">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
